@@ -1,0 +1,94 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+:root {
+    --Background: rgb(34, 34, 34);
+    --Background-Keys: rgb(32, 37, 51);
+    --Keys: rgb(172, 172, 172);
+    --Celeste: rgb(97, 221, 230);
+}
+
+.Flex-Container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-1 {
+    background-color: var(--Background);
+    display: grid;
+    height: 330px;
+    width: 310px;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container-2{
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(3, 40px);
+    padding: 5px;
+    border-radius: 1rem;
+    
+}
+
+.Container-3 {
+    background-color: var(--Background-Keys);
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(4, 40px);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+.item{
+    display: grid;
+    background-color: var(--Background-Keys);
+    align-items: center;
+    text-align: center;
+}
+
+.numero-guardado, .operador, .numero-actual {
+    background-color: var(--Backgroung);
+    border-radius: 1rem;
+    text-align: right;
+    color: var(--Celeste);
+    grid-column: span 5;
+    padding: 5px 10px;
+}
+
+.op_dividir, .op_masmenos, .op_por, .op_borrar, .op_menos, .op_mas{
+    display: grid;
+    background-color: rgb(57, 56, 63);;
+    border-radius: 2rem;
+}
+
+.op_borrar {
+    background-color: rgb(167, 19, 76);
+}
+
+.op_igual {
+    display: grid;
+    background-color: var(--Celeste);
+    grid-row: span 2;
+    border-radius: 1.5rem;
+
+}
+
+button {
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: var(--Keys);
+}
+
+.bt_igual{
+    color: var(--Background);
+}
+
+
